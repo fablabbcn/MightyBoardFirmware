@@ -37,7 +37,7 @@ static PROGMEM unsigned char SPLASH2_MSG[] =				"    ----------      ";
 #elif MODEL_REPLICATOR2
 static PROGMEM unsigned char SPLASH1_SINGLE_MSG[] =			" The Replicator 2   ";
 static PROGMEM unsigned char SPLASH1_DUAL_MSG[] =			" The Replicator 2X  ";
-static PROGMEM unsigned char SPLASH2_MSG[] =				"  --------------    ";
+static PROGMEM unsigned char SPLASH2_MSG[] =				" - From Anastasia - ";
 #else
 static PROGMEM unsigned char SPLASH1_MSG[] =				"     Makerbot       ";
 static PROGMEM unsigned char SPLASH2_MSG[] =				"    ----------      ";
@@ -45,7 +45,7 @@ static PROGMEM unsigned char SPLASH2_MSG[] =				"    ----------      ";
 
 static PROGMEM unsigned char SPLASH3_MSG[] =				"                    ";
 static PROGMEM unsigned char SPLASH4_MSG[] =				"Firmware Version 7. ";
-static PROGMEM unsigned char SPLASH5_MSG[] =				"Internal Release    ";
+static PROGMEM unsigned char SPLASH5_MSG[] =				"FabLabBcn Release   ";
 
 static PROGMEM unsigned char SPLASH1A_MSG[] =				"    FAIL!           ";
 static PROGMEM unsigned char SPLASH2A_MSG[] =				"    SUCCESS!        ";

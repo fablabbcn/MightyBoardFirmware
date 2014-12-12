@@ -58,8 +58,9 @@ Motherboard::Motherboard() :
 			eeprom_offsets::T0_DATA_BASE + toolhead_eeprom_offsets::HBP_PID_BASE, false, HEATER_HBP),
 			using_platform(eeprom::getEeprom8(eeprom_offsets::HBP_PRESENT, 1)),
 #ifdef MODEL_REPLICATOR2
-			Extruder_One(0, EXA_PWR, EXA_FAN, ThermocoupleReader::CHANNEL_ONE, eeprom_offsets::T0_DATA_BASE),
-			Extruder_Two(1, EXB_PWR, EXB_FAN, ThermocoupleReader::CHANNEL_TWO, eeprom_offsets::T1_DATA_BASE),
+			// FLIPPED CHANNEL A is now CHANNEL except for Thermocouple
+			Extruder_One(1, EXB_PWR, EXB_FAN, ThermocoupleReader::CHANNEL_ONE, eeprom_offsets::T1_DATA_BASE),
+			Extruder_Two(0, EXA_PWR, EXA_FAN, ThermocoupleReader::CHANNEL_TWO, eeprom_offsets::T0_DATA_BASE),
 			therm_sensor(THERMOCOUPLE_DO,THERMOCOUPLE_SCK,THERMOCOUPLE_DI, THERMOCOUPLE_CS)		
 #else
 	Extruder_One(0, EX1_PWR, EX1_FAN, THERMOCOUPLE_CS1,eeprom_offsets::T0_DATA_BASE),
